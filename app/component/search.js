@@ -10,7 +10,7 @@ var searchBar = {
 	border:'5px solid chocolate',
 	borderRadius:'50px',
 	marginLeft:'550px',
-	padding:'15px 10px',	
+	padding:'15px 10px',
 	width:'250px',
 	position:'absolute',
 	opacity:'0',
@@ -39,7 +39,7 @@ var form = {padding:'250px 0px'}
 var SearchValue;
 
 var Search = React.createClass({
-	
+
 	handleClick: function() {
 		document.getElementById('search-icon').style.opacity = '0';
 		document.getElementById("search-icon").style.transition = 'opacity 0.5s'
@@ -51,7 +51,6 @@ var Search = React.createClass({
 handleEnter: function(target) {
 	if(target.charCode == 13) {
 		var sbValue = document.getElementById('search-bar').value;
-		alert(sbValue);
 		this.props.onChange(sbValue);
 		}
 },
@@ -62,7 +61,7 @@ handleEnter: function(target) {
 					<div className='form-group text-center' id ='form' style={form} >
 						<a href='https://en.wikipedia.org/wiki/Special:Random' className='control-label' target='blank' style={label} >Click here for a random article</a>
 						<div>
-							<input id='search-bar' type='text' className='form-control' onKeyPress={this.handleEnter} style={searchBar} /> 
+							<input id='search-bar' type='text' className='form-control' onKeyPress={this.handleEnter} style={searchBar} />
 							{/*<span style={cancelIcon} className='glyphicon glyphicon-minus' ></span>*/}
 							<span id='search-icon' className='glyphicon glyphicon-search' onClick={this.handleClick} style={searchIcon} ></span>
 						</div>
