@@ -1,18 +1,8 @@
 var React = require('react');
 
-var arr;
-var itemDiv = {
-	backgroundColor: 'lavender',
-	padding: '10px 30px',
-	width:'1000px',
-	margin:'10px auto',
-	textAlign: 'justify'
-}
+var styles = require('../styles');
 
-var linkDec= {
-	textDecoration: 'none',
-	color:'black'
-}
+var arr;
 
 var SearchResults = React.createClass({
 
@@ -26,16 +16,15 @@ var SearchResults = React.createClass({
 		})
 
 		var items = arr.map(function(result,index){
-			console.log(result);
 			return (
 				<div>
-					<a style={linkDec} target='_blank' href={`https:\/\/en.wikipedia.org/wiki/${result.title}`} >
-						<div  id='itemDiv' style={itemDiv} key={index} >
+					<a style={styles.linkDec} target='_blank' href={`https:\/\/en.wikipedia.org/wiki/${result.title}`} >
+						<div  id='itemDiv' style={styles.itemDiv} key={index} >
 							<h3>{result.title}</h3>
 							<p>{result.extract}</p>
-						</div> 
-					</a> 
-				</div> 
+						</div>
+					</a>
+				</div>
 				);
 		})
 
