@@ -1,31 +1,5 @@
 var React = require('react');
-
-var label= {
-	fontSize:'18px',
-	textDecoration: 'none',
-	color:'steelblue'
-}
-
-var searchBar = {
-	border:'5px solid chocolate',
-	borderRadius:'50px',
-	marginLeft:'550px',
-	padding:'15px 10px',
-	width:'250px',
-	position:'absolute',
-	opacity:'0',
-	backgroundColor:'#092b40',
-	color:'white'
-}
-
-var searchIcon = {
-	display:'block',
-	color:'chocolate',
-	fontSize:'40px',
-	marginTop:'20px',
-	marginBottom:'20px',
-	opacity:'1'
-}
+require('../styles/search.css');
 
 {/*var cancelIcon = {
 	borderRadius:'1px',
@@ -33,9 +7,6 @@ var searchIcon = {
 	position:'absolute',
 	color:'red'
 }*/}
-
-var form = {padding:'250px 0px'}
-
 var SearchValue;
 
 var Search = React.createClass({
@@ -57,15 +28,15 @@ handleEnter: function(target) {
 
 	render: function() {
 		return(
-			<div>
-					<div className='form-group text-center' id ='form' style={form} >
-						<a href='https://en.wikipedia.org/wiki/Special:Random' className='control-label' target='blank' style={label} >Click here for a random article</a>
+			<div className='col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3' >
+					<div className='col-xs-12 col-sm-12 col-md-12 form-group text-center' id ='form' >
+						<a href='https://en.wikipedia.org/wiki/Special:Random' className='control-label random-search' target='blank' >Click here for a random article</a>
 						<div>
-							<input ref='searchBar' id='search-bar' type='text' className='form-control' onKeyPress={this.handleEnter} style={searchBar} />
+							<input ref='searchBar' id='search-bar' type='text' className='form-control' onKeyPress={this.handleEnter}  />
 							{/*<span style={cancelIcon} className='glyphicon glyphicon-minus' ></span>*/}
-							<span ref='searchIcon' id='search-icon' className='glyphicon glyphicon-search' onClick={this.handleClick} style={searchIcon} ></span>
+							<span ref='searchIcon' id='search-icon' className='glyphicon glyphicon-search' onClick={this.handleClick}  ></span>
 						</div>
-						<span className='control-label' style={label} >Click icon to search</span>
+						<span className='control-label random-search' >Click icon to search</span>
 					</div>
 			</div>
 		);

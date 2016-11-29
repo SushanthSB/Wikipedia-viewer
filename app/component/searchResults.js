@@ -1,6 +1,5 @@
 var React = require('react');
-
-var styles = require('../styles');
+require('../styles/searchResults.css');
 
 var arr;
 
@@ -17,9 +16,9 @@ var SearchResults = React.createClass({
 
 		var items = arr.map(function(result,index){
 			return (
-				<div>
-					<a style={styles.linkDec} target='_blank' href={`https:\/\/en.wikipedia.org/wiki/${result.title}`} >
-						<div  id='itemDiv' style={styles.itemDiv} key={index} >
+				<div className='col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1' >
+					<a id='linkDec' target='_blank' href={`https:\/\/en.wikipedia.org/wiki/${result.title}`} >
+						<div  id='itemDiv' key={index} >
 							<h3>{result.title}</h3>
 							<p>{result.extract}</p>
 						</div>

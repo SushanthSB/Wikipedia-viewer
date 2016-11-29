@@ -36,10 +36,12 @@ var App = React.createClass({
 
 	render: function() {
 		return(
-			<div style={{backgroundColor:'#092b40',borderRadius:'0 !important'}} >
+			<div  >
 				<Header />
-				<Search onChange={this.changeState} />
-				<SearchResults resultSet={this.state.searchResults} />
+				<div className = 'col-xs-12 col-sm-12 col-md-12' style={{backgroundColor:'#092b40'}} >
+				  <Search onChange={this.changeState} />
+				  <SearchResults resultSet={this.state.searchResults} />
+				</div>
 			</div>
 		)
 	}

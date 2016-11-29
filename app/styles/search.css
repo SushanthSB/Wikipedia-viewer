@@ -1,0 +1,71 @@
+#form {
+	padding:250px 0px;
+}
+
+
+.random-search{
+	font-size:18px;
+	text-decoration: none;
+	color: steelblue
+}
+
+#search-bar{
+
+	border:5px solid chocolate;
+	border-radius:50px;
+	padding:15px 10px;
+	width:250px;
+	position:absolute;
+	opacity:0;
+	background-color:#092b40;
+	color:white
+}
+
+#search-icon {
+	display:block;
+	color:chocolate;
+	font-size:40px;
+	margin-top:20px;
+	margin-bottom:20px;
+	opacity:1
+}
+
+/********** For Laptops *************/
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+		#search-bar{
+			margin-left:200px;
+		}
+
+		.random-search{
+			font-size:18px;
+			text-decoration: none;
+			color: steelblue
+		}
+}
+
+/********** For Tablets landscape and portrait mode *************/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	#search-bar{
+			margin-left:100px;
+		}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	#search-bar{
+			margin-left:50px;
+		}
+}
+
+/********** For Phones landscape and portrait mode *************/
+
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+	#search-bar{
+			margin-left:160px;
+		}
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {
+	#search-bar{
+			margin-left:30px;
+		}
+}
