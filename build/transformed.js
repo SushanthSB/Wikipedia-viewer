@@ -21605,10 +21605,17 @@
 		render: function () {
 			return React.createElement(
 				'div',
+<<<<<<< HEAD
 				{ className: 'col-xs-12 col-sm-6 col-md-6 col-lg-4 col-sm-offset-3 col-md-offset-3 col-lg-offset-4' },
 				React.createElement(
 					'div',
 					{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group text-center', id: 'form' },
+=======
+				{ className: 'col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3' },
+				React.createElement(
+					'div',
+					{ className: 'col-xs-12 col-sm-12 col-md-12 form-group text-center', id: 'form' },
+>>>>>>> 73e8c744b5e1f93856e8f05998352d6d12f2c19e
 					React.createElement(
 						'a',
 						{ href: 'https://en.wikipedia.org/wiki/Special:Random', className: 'control-label random-search', target: 'blank' },
@@ -21667,7 +21674,11 @@
 
 
 	// module
+<<<<<<< HEAD
 	exports.push([module.id, "#form {\n\tpadding:250px 0px;\n}\n\n\n.random-search{\n\tfont-size:18px;\n\ttext-decoration: none;\n\tcolor: steelblue\n}\n\n#search-bar{\n\n\tborder:5px solid chocolate;\n\tborder-radius:50px;\n\tpadding:15px 10px;\n\twidth:250px;\n\tposition:absolute;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\tmargin: auto;\n\topacity:0;\n\tbackground-color:#092b40;\n\tcolor:white\n}\n\n#search-icon {\n\tdisplay:block;\n\tcolor:chocolate;\n\tfont-size:40px;\n\tmargin-top:20px;\n\tmargin-bottom:20px;\n\topacity:1\n}\n\n/********** For Laptops *************\n@media screen and (min-width: 1200px) and (max-width: 1600px){\n\t\t#search-bar{\n\t\t\tmargin-left:90px;\n\t\t}\n\n\t\t.random-search{\n\t\t\tfont-size:18px;\n\t\t\ttext-decoration: none;\n\t\t\tcolor: steelblue\n\t\t}\n}\n\n/********** For Tablets landscape and portrait mode ************\n@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {\n\t#search-bar{\n\t\t\tmargin-left:100px;\n\t\t}\n}\n\n@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {\n\t#search-bar{\n\t\t\tmargin-left:50px;\n\t\t}\n}\n\n/********** For Phones landscape and portrait mode *************\n\n@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {\n\t#search-bar{\n\t\t\tmargin-left:160px;\n\t\t}\n}\n\n@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {\n\t#search-bar{\n\t\t\tmargin-left:30px;\n\t\t}\n}\n*/", ""]);
+=======
+	exports.push([module.id, "#form {\n\tpadding:250px 0px;\n}\n\n\n.random-search{\n\tfont-size:18px;\n\ttext-decoration: none;\n\tcolor: steelblue\n}\n\n#search-bar{\n\n\tborder:5px solid chocolate;\n\tborder-radius:50px;\n\tpadding:15px 10px;\n\twidth:250px;\n\tposition:absolute;\n\topacity:0;\n\tbackground-color:#092b40;\n\tcolor:white\n}\n\n#search-icon {\n\tdisplay:block;\n\tcolor:chocolate;\n\tfont-size:40px;\n\tmargin-top:20px;\n\tmargin-bottom:20px;\n\topacity:1\n}\n\n/********** For Laptops *************/\n@media screen and (min-width: 1200px) and (max-width: 1600px){\n\t\t#search-bar{\n\t\t\tmargin-left:200px;\n\t\t}\n\n\t\t.random-search{\n\t\t\tfont-size:18px;\n\t\t\ttext-decoration: none;\n\t\t\tcolor: steelblue\n\t\t}\n}\n\n/********** For Tablets landscape and portrait mode *************/\n@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {\n\t#search-bar{\n\t\t\tmargin-left:100px;\n\t\t}\n}\n\n@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {\n\t#search-bar{\n\t\t\tmargin-left:50px;\n\t\t}\n}\n\n/********** For Phones landscape and portrait mode *************/\n\n@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {\n\t#search-bar{\n\t\t\tmargin-left:160px;\n\t\t}\n}\n\n@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {\n\t#search-bar{\n\t\t\tmargin-left:30px;\n\t\t}\n}", ""]);
+>>>>>>> 73e8c744b5e1f93856e8f05998352d6d12f2c19e
 
 	// exports
 
@@ -23591,7 +23602,11 @@
 			var items = arr.map(function (result, index) {
 				return React.createElement(
 					'div',
+<<<<<<< HEAD
 					{ className: 'col-xs-12 col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1' },
+=======
+					{ className: 'col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1' },
+>>>>>>> 73e8c744b5e1f93856e8f05998352d6d12f2c19e
 					React.createElement(
 						'a',
 						{ id: 'linkDec', target: '_blank', href: `https:\/\/en.wikipedia.org/wiki/${ result.title }` },
