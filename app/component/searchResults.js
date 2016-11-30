@@ -16,7 +16,7 @@ var SearchResults = React.createClass({
 
 		var items = arr.map(function(result,index){
 			return (
-				<div className='col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1' >
+				<div className='col-xs-12 col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1' >
 					<a id='linkDec' target='_blank' href={`https:\/\/en.wikipedia.org/wiki/${result.title}`} >
 						<div  id='itemDiv' key={index} >
 							<h3>{result.title}</h3>

@@ -21506,7 +21506,7 @@
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
-					{ className: 'col-xs-12 col-sm-12 col-md-12', style: { backgroundColor: '#092b40' } },
+					{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12', style: { backgroundColor: '#092b40' } },
 					React.createElement(Search, { onChange: this.changeState }),
 					React.createElement(SearchResults, { resultSet: this.state.searchResults })
 				)
@@ -21563,17 +21563,6 @@
 	    color: 'white',
 	    fontSize: '25px',
 	    letterSpacing: '1px'
-	  },
-	  itemDiv: {
-	    backgroundColor: 'lavender',
-	    padding: '10px 30px',
-	    width: '1000px',
-	    margin: '10px auto',
-	    textAlign: 'justify'
-	  },
-	  linkDec: {
-	    textDecoration: 'none',
-	    color: 'black'
 	  }
 	};
 
@@ -21586,41 +21575,12 @@
 	var React = __webpack_require__(1);
 	__webpack_require__(182);
 
-	var label = {
-		fontSize: '18px',
-		textDecoration: 'none',
-		color: 'steelblue'
-	};
-
-	var searchBar = {
-		border: '5px solid chocolate',
-		borderRadius: '50px',
-		padding: '15px 10px',
-		width: '250px',
-		position: 'absolute',
-		opacity: '0',
-		backgroundColor: '#092b40',
-		color: 'white'
-	};
-
-	var searchIcon = {
-		display: 'block',
-		color: 'chocolate',
-		fontSize: '40px',
-		marginTop: '20px',
-		marginBottom: '20px',
-		opacity: '1'
-	};
-
 	{/*var cancelIcon = {
 	 borderRadius:'1px',
 	 marginTop:'400px',
 	 position:'absolute',
 	 color:'red'
 	 }*/}
-
-	var form = { padding: '250px 0px' };
-
 	var SearchValue;
 
 	var Search = React.createClass({
@@ -21645,24 +21605,24 @@
 		render: function () {
 			return React.createElement(
 				'div',
-				{ className: 'col-xs-8 col-sm-6 col-md-6 col-xs-offset-2 col-sm-offset-3 col-md-offset-3' },
+				{ className: 'col-xs-12 col-sm-6 col-md-6 col-lg-4 col-sm-offset-3 col-md-offset-3 col-lg-offset-4' },
 				React.createElement(
 					'div',
-					{ className: 'form-group text-center', id: 'form', style: form },
+					{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group text-center', id: 'form' },
 					React.createElement(
 						'a',
-						{ href: 'https://en.wikipedia.org/wiki/Special:Random', className: 'control-label', target: 'blank', style: label },
+						{ href: 'https://en.wikipedia.org/wiki/Special:Random', className: 'control-label random-search', target: 'blank' },
 						'Click here for a random article'
 					),
 					React.createElement(
 						'div',
 						null,
-						React.createElement('input', { ref: 'searchBar', id: 'search-bar', type: 'text', className: 'form-control', onKeyPress: this.handleEnter, style: searchBar }),
-						React.createElement('span', { ref: 'searchIcon', id: 'search-icon', className: 'glyphicon glyphicon-search', onClick: this.handleClick, style: searchIcon })
+						React.createElement('input', { ref: 'searchBar', id: 'search-bar', type: 'text', className: 'form-control', onKeyPress: this.handleEnter }),
+						React.createElement('span', { ref: 'searchIcon', id: 'search-icon', className: 'glyphicon glyphicon-search', onClick: this.handleClick })
 					),
 					React.createElement(
 						'span',
-						{ className: 'control-label', style: label },
+						{ className: 'control-label random-search' },
 						'Click icon to search'
 					)
 				)
@@ -21707,7 +21667,7 @@
 
 
 	// module
-	exports.push([module.id, "#form {\n\tdisplay:none;\n}", ""]);
+	exports.push([module.id, "#form {\n\tpadding:250px 0px;\n}\n\n\n.random-search{\n\tfont-size:18px;\n\ttext-decoration: none;\n\tcolor: steelblue\n}\n\n#search-bar{\n\n\tborder:5px solid chocolate;\n\tborder-radius:50px;\n\tpadding:15px 10px;\n\twidth:250px;\n\tposition:absolute;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\tmargin: auto;\n\topacity:0;\n\tbackground-color:#092b40;\n\tcolor:white\n}\n\n#search-icon {\n\tdisplay:block;\n\tcolor:chocolate;\n\tfont-size:40px;\n\tmargin-top:20px;\n\tmargin-bottom:20px;\n\topacity:1\n}\n\n/********** For Laptops *************\n@media screen and (min-width: 1200px) and (max-width: 1600px){\n\t\t#search-bar{\n\t\t\tmargin-left:90px;\n\t\t}\n\n\t\t.random-search{\n\t\t\tfont-size:18px;\n\t\t\ttext-decoration: none;\n\t\t\tcolor: steelblue\n\t\t}\n}\n\n/********** For Tablets landscape and portrait mode ************\n@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {\n\t#search-bar{\n\t\t\tmargin-left:100px;\n\t\t}\n}\n\n@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {\n\t#search-bar{\n\t\t\tmargin-left:50px;\n\t\t}\n}\n\n/********** For Phones landscape and portrait mode *************\n\n@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {\n\t#search-bar{\n\t\t\tmargin-left:160px;\n\t\t}\n}\n\n@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {\n\t#search-bar{\n\t\t\tmargin-left:30px;\n\t\t}\n}\n*/", ""]);
 
 	// exports
 
@@ -23611,8 +23571,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-
-	var styles = __webpack_require__(180);
+	__webpack_require__(192);
 
 	var arr;
 
@@ -23632,13 +23591,13 @@
 			var items = arr.map(function (result, index) {
 				return React.createElement(
 					'div',
-					null,
+					{ className: 'col-xs-12 col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1' },
 					React.createElement(
 						'a',
-						{ style: styles.linkDec, target: '_blank', href: `https:\/\/en.wikipedia.org/wiki/${ result.title }` },
+						{ id: 'linkDec', target: '_blank', href: `https:\/\/en.wikipedia.org/wiki/${ result.title }` },
 						React.createElement(
 							'div',
-							{ id: 'itemDiv', style: styles.itemDiv, key: index },
+							{ id: 'itemDiv', key: index },
 							React.createElement(
 								'h3',
 								null,
@@ -23663,6 +23622,46 @@
 	});
 
 	module.exports = SearchResults;
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(193);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(185)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./searchResults.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./searchResults.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(184)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "#itemDiv{\n    background-color: lavender;\n    padding: 10px 30px;\n    margin: 10px auto;\n    text-align: justify\n  }\n\n #linkDec {\n    color: black;\n    text-decoration: none;\n  }\n\n  #itemDiv h3 {\n  \t\tcolor:orange;\n  \t}\n\n  /********** For Phones landscape and portrait mode *************/\n\n  @media screen and (min-width: 320px) and (max-width: 640px){\n  \t#itemDiv {\n  \t\tpadding:1px 5px;\n  \t}\n  \t#itemDiv h3 {\n  \t\tcolor:orange;\n  \t\tfont-size: 18px;\n  \t}\n  \t#itemDiv p {\n  \t\tfont-size: 12px;\n  \t}\n  }", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);

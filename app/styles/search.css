@@ -15,7 +15,7 @@
 	border-radius:50px;
 	padding:15px 10px;
 	width:250px;
-	position:absolute;
+	margin:20px auto;
 	opacity:0;
 	background-color:#092b40;
 	color:white
@@ -25,15 +25,19 @@
 	display:block;
 	color:chocolate;
 	font-size:40px;
-	margin-top:20px;
-	margin-bottom:20px;
-	opacity:1
+	opacity:1;
+	position:absolute;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+	margin-top:300px;
 }
 
-/********** For Laptops *************/
+/********** For Laptops *************
 @media screen and (min-width: 1200px) and (max-width: 1600px){
 		#search-bar{
-			margin-left:200px;
+			margin-left:90px;
 		}
 
 		.random-search{
@@ -43,7 +47,7 @@
 		}
 }
 
-/********** For Tablets landscape and portrait mode *************/
+/********** For Tablets landscape and portrait mode ************
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	#search-bar{
 			margin-left:100px;
@@ -56,7 +60,7 @@
 		}
 }
 
-/********** For Phones landscape and portrait mode *************/
+/********** For Phones landscape and portrait mode *************
 
 @media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
 	#search-bar{
@@ -69,3 +73,4 @@
 			margin-left:30px;
 		}
 }
+*/
