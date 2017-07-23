@@ -34,6 +34,28 @@
 	margin-top:300px;
 }
 
+.cancel-icon {
+    opacity: 0
+}
+.cancel1, .cancel2 {
+	position: absolute;
+	width: 20px;
+    height: 5px;
+    background-color: red;
+    margin-top:-43px;
+    margin-left: 90px;
+}
+.cancel1 {
+	-ms-transform: rotate(40deg);
+	-webkit-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+.cancel2 {
+	-ms-transform: rotate(-40deg);
+	-webkit-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+}
+
 /********** For Laptops *************
 @media screen and (min-width: 1200px) and (max-width: 1600px){
 		#search-bar{

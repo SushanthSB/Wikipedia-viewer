@@ -29,8 +29,12 @@ var App = React.createClass({
   			}.bind(this)
   		});
 
-  		document.getElementById('form').style.padding = '50px 0px 10px 0px';
-  		document.getElementById('form').style.transition = 'padding 1s';
+  		$(document).ready(function(){
+  			$("#form").css({
+  				"padding":"50px 0px 10px 0px",
+  				"transition": "padding 1s"
+  			})
+  		})
 },
 	
 
@@ -41,6 +45,7 @@ var App = React.createClass({
 				<div className = 'col-xs-12 col-sm-12 col-md-12 col-lg-12' style={{backgroundColor:'#092b40'}} >
 				  <Search onChange={this.changeState} />
 				  <SearchResults resultSet={this.state.searchResults} />
+				  {console.log(this.state.searchResults)}
 				</div>
 			</div>
 		)
