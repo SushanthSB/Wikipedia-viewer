@@ -12,16 +12,24 @@ var SearchValue;
 var Search = React.createClass({
 
 	handleClick: function() {
-		this.refs.searchIcon.style.opacity = '0';
-		this.refs.searchIcon.style.transition = 'opacity 0.5s'
-		this.refs.searchBar.style.opacity = '1';
-		this.refs.searchBar.style.transition='opacity 1s';
-		this.refs.searchBar.focus();
+		$("#search-icon").css({
+			"opacity":"0",
+			"transition":"opacity 0.5s"
+		})
+		$('#search-bar').css({
+			"opacity":"1",
+			"transition":"opacity 1s"
+		})
+		$("#search-bar").focus();
+		$(".cancel-icon").css({
+			"opacity":"1",
+			"transition":"opacity 1s"
+		})
 	},
 
 handleEnter: function(target) {
 	if(target.charCode == 13) {
-		var sbValue = document.getElementById('search-bar').value;
+		var sbValue = $("#search-bar").val()
 		this.props.onChange(sbValue);
 		}
 },
@@ -33,7 +41,7 @@ handleEnter: function(target) {
 						<a href='https://en.wikipedia.org/wiki/Special:Random' className='control-label random-search' target='blank' >Click here for a random article</a>
 						<div >
 							<input ref='searchBar' id='search-bar' type='text' className='form-control' onKeyPress={this.handleEnter}  />
-							{/*<span style={cancelIcon} className='glyphicon glyphicon-minus' ></span>*/}
+							{/*z<span style={cancelIcon} className='glyphicon glyphicon-minus' ></span>*/}
 							<span ref='searchIcon' id='search-icon' className='glyphicon glyphicon-search' onClick={this.handleClick}  ></span>
 						</div>
 						<span className='control-label random-search' >Click icon to search</span>

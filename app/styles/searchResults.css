@@ -5,14 +5,18 @@
     text-align: justify
   }
 
- #linkDec {
-    color: black;
-    text-decoration: none;
-  }
+#itemDiv:hover{
+  border-left: 10px solid orange;
+  transition: border 0.3s;
+}
+#linkDec {
+  color: black;
+  text-decoration: none;
+}
 
-  #itemDiv h3 {
-  		color:orange;
-  	}
+#itemDiv h3 {
+  color:orange;
+}
 
   /********** For Phones landscape and portrait mode *************/
 
