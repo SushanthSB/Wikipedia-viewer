@@ -8,7 +8,7 @@ function Header() {
 			<div className='container-fluid'>
 				<div className='navbar-header'>
 					<a className='navbar-brand'>
-						<span style={styles.navTitle}>Search2Read</span>
+						<span style={styles.navTitle}>Wiki-Viewer</span>
 					</a>
 				</div>
 			</div>
